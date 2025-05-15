@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos Agora</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container top-bar">
+      <div class="logo">
+        <h1><a href="#">Eventos Agora</a></h1>
+      </div>
+      <nav class="main-nav">
+        <a href="#">Início</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="user-actions">
+        <a href="#" class="btn login-btn" onclick="document.getElementById('loginModal').style.display='block'">Entrar</a>
+        <a href="#" class="btn signup-btn">Cadastrar</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h2>Encontre, participe e crie eventos incríveis</h2>
+      <input type="text" placeholder="Buscar por evento, local ou data..." />
+      <button>Buscar</button>
+    </div>
+  </section>
+
+  <section class="categorias">
+    <div class="container">
+      <h3>Categorias Populares</h3>
+      <div class="categoria-grid">
+        <div class="categoria">Negócios</div>
+        <div class="categoria">Tecnologia</div>
+        <div class="categoria">Música</div>
+        <div class="categoria">Esportes</div>
+        <div class="categoria">Educação</div>
+        <div class="categoria">Arte</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="destaque">
+    <div class="container">
+      <h3>Evento em Destaque</h3>
+      <div class="evento-destaque">
+        <img src="rock in rio.jpg" alt="Evento Destaque" />
+        <div class="evento-info">
+          <h4>Rock in Rio 2025</h4>
+          <p>O Rock in Rio, em 2025, será uma edição especial, comemorando 40 anos do festival no Rio de Janeiro.</p>
+          <p>O evento acontecerá nos dias 13, 14, 15, 19, 20, 21 e 22 de setembro, na Cidade do Rock, no Parque Olímpico, na Barra da Tijuca. .</p>
+          <button>Ver mais</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="eventos" class="eventos">
+    <div class="container">
+      <h3>Próximos Eventos</h3>
+      <div class="eventos-grid">
+        <div class="evento-card">
+          <img src="sp-inovador-exposec-feira-ciberseguranca-sao-paulo-ecossistema-inovacao-sao-paulo-esg-ia-startups-governo-rede-brasil-.jpg" alt="Evento 1" />
+          <h4>Feira de Startups 2025</h4>
+          <p>São Paulo - 20 de Junho</p>
+          <a href="#">Ver detalhes</a>
+        </div>
+        <div class="evento-card">
+          <img src="festival.webp" alt="Evento 2" />
+          <h4>Festival de Música Indie</h4>
+          <p>Rio de Janeiro - 25 de Julho</p>
+          <a href="#">Ver detalhes</a>
+        </div>
+        <div class="evento-card">
+          <img src="unnamed-28.jpg" alt="Evento 3" />
+          <h4>Feira de animeI</h4>
+          <p>Brasilia - 10 de Agosto</p>
+          <a href="#">Ver detalhes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="como-funciona">
+    <div class="container">
+      <h3>Como Funciona</h3>
+      <div class="passos">
+        <div class="passo">
+          <h4>1. Encontre</h4>
+          <p>Pesquise eventos pelo seu interesse ou localização.</p>
+        </div>
+        <div class="passo">
+          <h4>2. Participe</h4>
+          <p>Garanta seu ingresso gratuitamente ou faça sua inscrição.</p>
+        </div>
+        <div class="passo">
+          <h4>3. Crie</h4>
+          <p>Organize seu próprio evento e divulgue aqui.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos">
+    <div class="container">
+      <h3>O que dizem sobre nós</h3>
+      <div class="depoimentos-grid">
+        <div class="depoimento">
+          <p>"Plataforma incrível! Organizei meu primeiro evento sem complicação."</p>
+          <strong>— Marina S.</strong>
+        </div>
+        <div class="depoimento">
+          <p>"Usei para encontrar eventos na minha área. Recomendo muito!"</p>
+          <strong>— Carlos T.</strong>
+        </div>
+        <div class="depoimento">
+          <p>"Interface intuitiva e suporte excelente."</p>
+          <strong>— João K.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h3>Inscreva-se para novidades</h3>
+      <p>Receba eventos, dicas e muito mais direto no seu e-mail.</p>
+      <form>
+        <input type="email" placeholder="Seu e-mail" required />
+        <button type="submit">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+      <h3>Entrar</h3>
+      <form>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+
+  <footer id="contato">
+    <div class="container footer-grid">
+      <div>
+        <h4>Eventos Agora</h4>
+        <p>Plataforma completa para divulgar, encontrar e organizar eventos.</p>
+      </div>
+      <div>
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Siga-nos</h4>
+        <p>Instagram | Facebook | LinkedIn</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Eventos Agora. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Modal de login
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('loginModal')) {
+        document.getElementById('loginModal').style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
+
